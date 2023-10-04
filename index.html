@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Website</title>
     <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href="mediaqueries.css">
   </head>
 
 
@@ -34,9 +35,9 @@
                     <li><a href="#" class="hover-link primary-button">Sign up</a></li>
                 </ul>
             </div>
-            <!-- <a href="#" class="nav-toggle hover-link" id="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </a> -->
+            <a href="#" class = "nav-toggle hover-link" id = "nav-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
     </nav>
 
@@ -310,6 +311,16 @@
 
 
     <script src="https://kit.fontawesome.com/e764845107.js" crossorigin="anonymous"></script>
+
+    <script>
+      const toggleButton = document.getElementById('nav-toggle');
+      const navLinks = document.getElementById('nav-links');
+
+      toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+
   </body>
 
 
